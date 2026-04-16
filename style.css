@@ -13,6 +13,7 @@
     background-size: cover;
     padding: 10px 10%;
     overflow: hidden;
+    position: relative;
 
 }
 
@@ -63,14 +64,61 @@ nav ul li a{
    color:#fff;
    background-image : linear-gradient(45deg, #9948df, #6c077a);
     font-size: 18px;
-    border-radius: 4px;
+    border-radius: 30px;
     border-top-right-radius: 0;
+    transition: 0.5s;
 }
 .logo{
     width: 80px;
     border-radius: 50%;
 }
 
-.loganddown{
-    align-items: center;
+
+
+.content{
+
+    margin-top:10%;
+    max-width: 800px;
+    color:#fff;
+}
+
+.content h1{
+    font-size: 70px;
+    color:#fff;
+
+}
+.content p{
+    margin:10px 0 20px;
+    animation-delay: 0.5s;
+}
+
+.content .btn{
+    font-size: 15px;
+    padding: 15px 40px;
+    animation-delay: 1s;
+}
+
+.btn:hover{
+    border-top-right-radius: 30px;
+}
+.feature-img{
+    width: 350px;
+    position: absolute;
+    right: 10%;
+    top: 40%;
+    animation: animate 4s linear infinite;
+    border-radius: 50%;
+
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation:moveup 0.5s linear forwards;
+}
+
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
